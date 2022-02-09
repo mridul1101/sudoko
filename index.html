@@ -1,0 +1,127 @@
+<html>
+<body>
+    <link rel="stylesheet" href="style.css">
+     <script src="script.js"></script>
+<h1>Sudoku</h1>
+<div class="flex">
+<button onclick="validate()">Validate</button>
+<button onclick="e()">Easy </button>
+<button onclick="m()">Medium</button>
+<button onclick="h()">Hard</button>
+<button onclick="submit()">Submit</button>
+</div>
+<table>
+   <tr>
+       <td><input  maxlength="1" id="a1"  onclick="findrc(1)" onchange="validate()" /></td>
+       <td><input  maxlength="1" id="a2"  onclick="findrc(2)" onchange="validate()"/></td>
+       <td><input  maxlength="1" id="a3"  onclick="findrc(3)" onchange="validate()"/></td>
+       <td><input  maxlength="1" id="a4"  onclick="findrc(4)" onchange="validate()"/></td>
+       <td><input  maxlength="1" id="a5"  onclick="findrc(5)" onchange="validate()"/></td>
+       <td><input  maxlength="1" id="a6"  onclick="findrc(6)" onchange="validate()"/></td>
+       <td><input  maxlength="1" id="a7"  onclick="findrc(7)" onchange="validate()"/></td>
+       <td><input  maxlength="1" id="a8"  onclick="findrc(8)" onchange="validate()"/></td>
+       <td><input  maxlength="1" id="a9"  onclick="findrc(9)" onchange="validate()"/></td>
+      
+
+   </tr>
+   
+   <tr>
+       <td><input  maxlength="1" id="a10" onclick="findrc(10)" onchange="validate()"/></td>
+       <td><input  maxlength="1" id="a11" onclick="findrc(11)" onchange="validate()"/></td>
+       <td><input  maxlength="1" id="a12" onclick="findrc(12)" onchange="validate()"/></td>
+       <td><input  maxlength="1" id="a13" onclick="findrc(13)" onchange="validate()"/></td>
+       <td><input  maxlength="1" id="a14" onclick="findrc(14)" onchange="validate()"/></td>
+       <td><input  maxlength="1" id="a15" onclick="findrc(15)" onchange="validate()"/></td>
+       <td><input  maxlength="1" id="a16" onclick="findrc(16)" onchange="validate()"/></td>
+       <td><input  maxlength="1" id="a17" onclick="findrc(17)" onchange="validate()"/></td>
+       <td><input  maxlength="1" id="a18" onclick="findrc(18)" onchange="validate()"/></td>
+       
+    
+</tr>
+<tr>
+    <td><input  maxlength="1" id="a19" onclick="findrc(19)"onchange="validate()"/></td>
+    <td><input  maxlength="1" id="a20" onclick="findrc(20)"onchange="validate()"/></td>
+    <td><input  maxlength="1" id="a21" onclick="findrc(21)"onchange="validate()"/></td>
+    <td><input  maxlength="1" id="a22" onclick="findrc(22)"onchange="validate()"/></td>
+    <td><input  maxlength="1" id="a23" onclick="findrc(23)"onchange="validate()"/></td>
+    <td><input  maxlength="1" id="a24" onclick="findrc(24)"onchange="validate()"/></td>
+    <td><input  maxlength="1" id="a25" onclick="findrc(25)"onchange="validate()"/></td>
+    <td><input  maxlength="1" id="a26" onclick="findrc(26)"onchange="validate()"/></td>
+    <td><input  maxlength="1" id="a27" onclick="findrc(27)"onchange="validate()"/></td> 
+</tr>
+<tr class="top">
+       <td><input  maxlength="1" id="a28"onclick="findrc(28)"onchange="validate()"/></td>
+       <td><input  maxlength="1" id="a29"onclick="findrc(29)"onchange="validate()"/></td>
+       <td><input  maxlength="1" id="a30"onclick="findrc(30)"onchange="validate()"/></td>
+       <td><input  maxlength="1" id="a31"onclick="findrc(31)"onchange="validate()"/></td>
+       <td><input  maxlength="1" id="a32"onclick="findrc(32)"onchange="validate()"/></td>
+       <td><input  maxlength="1" id="a33"onclick="findrc(33)"onchange="validate()"/></td>
+       <td><input  maxlength="1" id="a34"onclick="findrc(34)"onchange="validate()"/></td>
+       <td><input  maxlength="1" id="a35"onclick="findrc(35)"onchange="validate()"/></td>
+       <td><input  maxlength="1" id="a36"onclick="findrc(36)"onchange="validate()"/></td>
+       
+</tr>
+<tr>
+    <td><input  maxlength="1" id="a37" onclick="findrc(37)"onchange="validate()"/></td>
+    <td><input  maxlength="1" id="a38" onclick="findrc(38)"onchange="validate()"/></td>
+    <td><input  maxlength="1" id="a39" onclick="findrc(39)"onchange="validate()"/></td>
+    <td><input  maxlength="1" id="a40" onclick="findrc(40)"onchange="validate()"/></td>
+    <td><input  maxlength="1" id="a41" onclick="findrc(41)"onchange="validate()"/></td>
+    <td><input  maxlength="1" id="a42" onclick="findrc(42)"onchange="validate()"/></td>
+    <td><input  maxlength="1" id="a43" onclick="findrc(43)"onchange="validate()"/></td>
+    <td><input  maxlength="1" id="a44" onclick="findrc(44)"onchange="validate()"/></td>
+    <td><input  maxlength="1" id="a45" onclick="findrc(45)"onchange="validate()"/></td>   
+</tr>
+<tr>
+       <td><input  maxlength="1" id="a46"onclick="findrc(46)"onchange="validate()"/></td>
+       <td><input  maxlength="1" id="a47"onclick="findrc(47)"onchange="validate()"/></td>
+       <td><input  maxlength="1" id="a48"onclick="findrc(48)"onchange="validate()"/></td>
+       <td><input  maxlength="1" id="a49"onclick="findrc(49)"onchange="validate()"/></td>
+       <td><input  maxlength="1" id="a50"onclick="findrc(50)"onchange="validate()"/></td>
+       <td><input  maxlength="1" id="a51"onclick="findrc(51)"onchange="validate()"/></td>
+       <td><input  maxlength="1" id="a52"onclick="findrc(52)"onchange="validate()"/></td>
+       <td><input  maxlength="1" id="a53"onclick="findrc(53)"onchange="validate()"/></td>
+       <td><input  maxlength="1" id="a54"onclick="findrc(54)"onchange="validate()"/></td>
+
+</tr>
+<tr class="top">
+    <td><input  maxlength="1" id="a55"onclick="findrc(55))" onchange="validate()"/></td>
+    <td><input  maxlength="1" id="a56"onclick="findrc(56)" onchange="validate()"/></td>
+    <td><input  maxlength="1" id="a57"onclick="findrc(57)" onchange="validate()"/></td>
+    <td><input  maxlength="1" id="a58"onclick="findrc(58)"onchange="validate()"/></td>
+    <td><input  maxlength="1" id="a59"onclick="findrc(59)"onchange="validate()"/></td>
+    <td><input  maxlength="1" id="a60"onclick="findrc(60)"onchange="validate()"/></td>
+    <td><input  maxlength="1" id="a61"onclick="findrc(61)"onchange="validate()"/></td>
+    <td><input  maxlength="1" id="a62"onclick="findrc(62)"onchange="validate()"/></td>
+    <td><input  maxlength="1" id="a63"onclick="findrc(63)"onchange="validate()"/></td>
+
+
+</tr>
+
+<tr>
+       <td><input  maxlength="1" id="a64"onclick="findrc(64)"onchange="validate()"/></td>
+       <td><input  maxlength="1" id="a65"onclick="findrc(65)"onchange="validate()"/></td>
+       <td><input  maxlength="1" id="a66"onclick="findrc(66)"onchange="validate()"/></td>
+       <td><input  maxlength="1" id="a67"onclick="findrc(67))"onchange="validate()"/></td>
+       <td><input  maxlength="1" id="a68"onclick="findrc(68)"onchange="validate()"/></td>
+       <td><input  maxlength="1" id="a69"onclick="findrc(69)"onchange="validate()"/></td>
+       <td><input  maxlength="1" id="a70"onclick="findrc(70)"onchange="validate()"/></td>
+       <td><input  maxlength="1" id="a71"onclick="findrc(71)"onchange="validate()"/></td>
+       <td><input  maxlength="1" id="a72"onclick="findrc(72)"onchange="validate()"/></td>
+</tr>
+<tr>
+       <td><input  maxlength="1" id="a73"onclick="findrc(73)"onchange="validate()"/></td>
+       <td><input  maxlength="1" id="a74"onclick="findrc(74)"onchange="validate()"/></td>
+       <td><input  maxlength="1" id="a75"onclick="findrc(75)"onchange="validate()"/></td>
+       <td><input  maxlength="1" id="a76"onclick="findrc(76)"onchange="validate()"/></td>
+       <td><input  maxlength="1" id="a77"onclick="findrc(77)"onchange="validate()"/></td>
+       <td><input  maxlength="1" id="a78"onclick="findrc(78)"onchange="validate()"/></td>
+       <td><input  maxlength="1" id="a79"onclick="findrc(79)"onchange="validate()"/></td>
+       <td><input  maxlength="1" id="a80"onclick="findrc(80)"onchange="validate()"/></td>
+       <td><input  maxlength="1" id="a81"onclick="findrc(81)"onchange="validate()"/></td>
+    
+</tr>
+</table>
+
+</body>
+</html>
